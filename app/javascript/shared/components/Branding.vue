@@ -1,5 +1,10 @@
 <template>
-  <div></div>
+  <div
+    v-if="globalConfig.brandName && !disableBranding"
+    class="px-0 py-3 flex justify-center"
+  >
+  </div>
+  <div v-else class="p-3" />
 </template>
 
 <script>
